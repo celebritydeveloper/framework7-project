@@ -22,6 +22,9 @@ export default class extends React.Component {
       <Page name="product">
         <Navbar title={this.state.product.title} backLink="Back" />
         <BlockTitle>{this.state.product.title}</BlockTitle>
+        <Block>
+          <img src={this.state.product.image} width="80" />
+        </Block>
         <Block strong>
           {this.state.product.description}
         </Block>

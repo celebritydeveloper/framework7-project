@@ -47,6 +47,7 @@ export default class extends React.Component {
                 address: "9, Ikpa Road, Uyo",
                 rating: 4.4,
                 time: "11AM - 11PM",
+                image: "https://cdn.framework7.io/placeholder/people-160x160-1.jpg",
                 description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi tempora similique reiciendis, error nesciunt vero, blanditiis pariatur dolor, minima sed sapiente rerum, dolorem corrupti hic modi praesentium unde saepe perspiciatis.'
               },
               {
@@ -55,6 +56,7 @@ export default class extends React.Component {
                 address: "Flat 2, Ekeki Estate, Yenagoa",
                 rating: 3.5,
                 time: "12PM - 3PM",
+                image: "https://cdn.framework7.io/placeholder/people-160x160-1.jpg",
                 description: 'Velit odit autem modi saepe ratione totam minus, aperiam, labore quia provident temporibus quasi est ut aliquid blanditiis beatae suscipit odio vel! Nostrum porro sunt sint eveniet maiores, dolorem itaque!'
               },
               {
@@ -63,6 +65,7 @@ export default class extends React.Component {
                 address: "9, Ikpa Road, Uyo",
                 rating: 2.3,
                 time: "10AM - 6PM",
+                image: "https://cdn.framework7.io/placeholder/people-160x160-1.jpg",
                 description: 'Expedita sequi perferendis quod illum pariatur aliquam, alias laboriosam! Vero blanditiis placeat, mollitia necessitatibus reprehenderit. Labore dolores amet quos, accusamus earum asperiores officiis assumenda optio architecto quia neque, quae eum.'
               },
               {
@@ -71,6 +74,7 @@ export default class extends React.Component {
                 address: "9, Ikpa Road, Uyo",
                 rating: 2.3,
                 time: "10AM - 6PM",
+                image: "https://cdn.framework7.io/placeholder/people-160x160-1.jpg",
                 description: 'Expedita sequi perferendis quod illum pariatur aliquam, alias laboriosam! Vero blanditiis placeat, mollitia necessitatibus reprehenderit. Labore dolores amet quos, accusamus earum asperiores officiis assumenda optio architecto quia neque, quae eum.'
               },
 
@@ -80,6 +84,7 @@ export default class extends React.Component {
                 address: "9, Ikpa Road, Uyo",
                 rating: 2.3,
                 time: "10AM - 6PM",
+                image: "https://cdn.framework7.io/placeholder/people-160x160-1.jpg",
                 description: 'Expedita sequi perferendis quod illum pariatur aliquam, alias laboriosam! Vero blanditiis placeat, mollitia necessitatibus reprehenderit. Labore dolores amet quos, accusamus earum asperiores officiis assumenda optio architecto quia neque, quae eum.'
               },
 
@@ -89,6 +94,7 @@ export default class extends React.Component {
                 address: "12, Oron Road, Uyo",
                 rating: 2.3,
                 time: "10AM - 6PM",
+                image: "https://cdn.framework7.io/placeholder/people-160x160-1.jpg",
                 description: 'Expedita sequi perferendis quod illum pariatur aliquam, alias laboriosam! Vero blanditiis placeat, mollitia necessitatibus reprehenderit. Labore dolores amet quos, accusamus earum asperiores officiis assumenda optio architecto quia neque, quae eum.'
               },
             ]
@@ -119,23 +125,12 @@ export default class extends React.Component {
     return (
       <App params={ this.state.f7params } >
 
-        {/* Left panel with cover effect*/}
-        <Panel left cover themeDark>
-          <View>
-            <Page>
-              <Navbar title="Left Panel"/>
-              <Block>Left panel content goes here</Block>
-            </Page>
-          </View>
-        </Panel>
-
-
-        {/* Right panel with reveal effect*/}
+               {/* Right panel with reveal effect*/}
         <Panel right reveal themeDark>
           <View>
             <Page>
               <Navbar title="Right Panel"/>
-              <Block>Right panel content goes here</Block>
+              <Block> Link to the menu List </Block>
             </Page>
           </View>
         </Panel>
@@ -146,7 +141,7 @@ export default class extends React.Component {
           {/* Tabbar for switching views-tabs */}
           <Toolbar tabbar labels bottom className="toolbar">
             <Link tabLink="#view-home" tabLinkActive iconIos="f7:house" iconAurora="f7:house" iconMd="material:home" text="Home" />
-            <Link tabLink="#view-catalog" iconIos="f7:gift_fill" iconAurora="f7:gift_fill" iconMd="material:room_service" text="Meals" />
+            <Link tabLink="#view-meals" iconIos="f7:gift_fill" iconAurora="f7:gift_fill" iconMd="material:room_service" text="Meals" />
             <Link tabLink="#view-about" iconIos="f7:map_pin_ellipse" iconAurora="f7:map_pin_ellipse" iconMd="material:place" text="Location" />
             <Link tabLink="#view-settings" iconIos="f7:gear_alt_fill" iconAurora="f7:gear_alt_fill" iconMd="material:settings" text="Settings" />
           </Toolbar>
@@ -155,7 +150,7 @@ export default class extends React.Component {
           <View id="view-home" main tab tabActive url="/" />
 
           {/* Catalog View */}
-          <View id="view-catalog" name="catalog" tab url="/catalog/" />
+          <View id="view-meals" name="catalog" tab url="/meals/" />
 
           {/* Settings View */}
           <View id="view-about" name="settings" tab url="/about/" />

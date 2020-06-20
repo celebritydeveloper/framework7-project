@@ -12,13 +12,13 @@ export default class extends React.Component {
 
   getBadgeClasses() {
     let classes = "";
-    classes += this.state.rating < 3 ? "red" : "blue";
+    classes += this.state.rating <= 2 ? "blue" : "Yellow";
     return classes;
   }
   render() {
     return (
-      <Page name="catalog">
-        <Navbar>
+      <Page name="Meals">
+        <Navbar noHairline>
           <NavLeft color="yellow" backLink="Back" />
           <NavTitle className="meal--title">Nearby</NavTitle>
           <NavRight>
@@ -30,14 +30,14 @@ export default class extends React.Component {
             <ListItem
               key={product.id}
               className="meal--list-item"
-              link={`/product/${product.id}/`}
+              link={`/single-meal/${product.id}/`}
               header={product.time}
               title={product.title}
               footer={product.address}
               badge={product.rating} badgeColor={this.getBadgeClasses()}
               noChevron
             >
-              <img slot="media" src="https://cdn.framework7.io/placeholder/people-160x160-1.jpg" width="80" />
+              <img slot="media" src={product.image} width="80" />
             </ListItem>
           ))}
         </List>

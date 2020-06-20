@@ -21,16 +21,6 @@ import {
 export default () => (
   <Page name="home" className="home">
     {/* Top Navbar */}
-    <Navbar large sliding={false}>
-      <NavLeft>
-        <Link iconIos="f7:menu" iconAurora="f7:menu" iconMd="material:menu" panelOpen="left" />
-      </NavLeft>
-      <NavTitle sliding>Interview App</NavTitle>
-      <NavRight>
-        <Link iconIos="f7:menu" iconAurora="f7:menu" iconMd="material:menu" panelOpen="right" />
-      </NavRight>
-      <NavTitleLarge>Interview App</NavTitleLarge>
-    </Navbar>
 
     {/* Page content */}
     <Block className="text-center">
@@ -38,12 +28,12 @@ export default () => (
     </Block>
 
     <BlockTitle className="text-center">
-      <p>Get the best coffee in town! </p>
+      <p className="home--title">Get the best coffee in town! </p>
     </BlockTitle>
     
     
 
-    <Block>
+    <Block className="home__link-section">
       <Row tag="p">
         <Link href="/register/" className="col btn-brown">Register</Link>
         <Link href="/login/" className="col btn-yellow">Login</Link>
