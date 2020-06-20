@@ -10,14 +10,15 @@ import {
   Row,
   Button,
   Range,
-  Block
+  Block,
+  Link
 } from 'framework7-react';
 
 export default () => (
   <Page name="form login">
     <Navbar className="login--nav" title="Login" backLink="Back" backLinkShowText></Navbar>
-
-    <List >
+    <BlockTitle>Welcome back!</BlockTitle>
+    <List className="login--form">
       <ListInput
         label="E-mail"
         type="email"
@@ -39,6 +40,10 @@ export default () => (
       <Row tag="p">
         <Button className="col login--btn" round fill>Login</Button>
       </Row>
+    </Block>
+
+    <Block>
+      <p className="login--register">Don't have an account? <Link className="login--register-link">Register Here</Link> </p>
     </Block>
 
     

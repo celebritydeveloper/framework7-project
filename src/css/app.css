@@ -20,6 +20,46 @@
   color: #ffcc00;
 }
 
+.login--form {
+  background: none;
+  border: none;
+}
+
+.login--form ul {
+  background: none;
+  border: none;
+}
+
+.login--form ul::before {
+  background: none;
+  border: none;
+}
+
+.login--form ul::after {
+  background: none;
+  border: none;
+}
+
+.login--form li {
+  background: none;
+  border: none;
+}
+
+.login--form .item-inner {
+  background: none;
+  border-bottom: 0.8px solid #ffcc00;
+}
+
+.login--form .item-inner:focus {
+  background: none;
+  border-bottom: 2px solid #ffcc00;
+}
+
+.login--form .item-inner::after {
+  background: none;
+  border: none;
+}
+
 .login--nav .back {
   color: #ffcc00;
   padding-left: 2px;
@@ -28,6 +68,16 @@
 .login--forgot {
   color: #ffcc00;
   text-align: right;
+}
+
+.login--register {
+  color: #31312f;
+  text-align: center;
+}
+
+.login--register-link {
+  color: #ffcc00;
+  text-align: center;
 }
 
 .meal--title {
