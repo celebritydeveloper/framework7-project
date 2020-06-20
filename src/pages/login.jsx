@@ -38,7 +38,7 @@ export default () => (
 
     <Block>
       <Row tag="p">
-        <Button className="col login--btn" round fill>Login</Button>
+        <Button className="col" round fill>Login</Button>
       </Row>
     </Block>
 

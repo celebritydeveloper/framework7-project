@@ -14,11 +14,12 @@ import {
   ListItem,
   Row,
   Col,
-  Button
+  Button,
+  Icon
 } from 'framework7-react';
 
 export default () => (
-  <Page name="home">
+  <Page name="home" className="home">
     {/* Top Navbar */}
     <Navbar large sliding={false}>
       <NavLeft>
@@ -32,54 +33,25 @@ export default () => (
     </Navbar>
 
     {/* Page content */}
-    <Block strong>
-      <p>This is an example of tabs-layout application. The main point of such tabbed layout is that each tab contains independent view with its own routing and navigation.</p>
-
-      <p>Each tab/view may have different layout, different navbar type (dynamic, fixed or static) or without navbar like this tab.</p>
+    <Block className="text-center">
+      <img src="https://cdn.framework7.io/placeholder/people-160x160-1.jpg" width="80" />
     </Block>
-    <BlockTitle>Navigation</BlockTitle>
-    <List>
-      <ListItem link="/about/" title="About"/>
-      <ListItem link="/form/" title="Form"/>
-    </List>
 
-    <BlockTitle>Modals</BlockTitle>
-    <Block strong>
-      <Row>
-        <Col width="50">
-          <Button fill raised popupOpen="#my-popup">Popup</Button>
-        </Col>
-        <Col width="50">
-          <Button fill raised loginScreenOpen="#my-login-screen">Login Screen</Button>
-        </Col>
+    <BlockTitle className="text-center">
+      <p>Get the best coffee in town! </p>
+    </BlockTitle>
+    
+    
+
+    <Block>
+      <Row tag="p">
+        <Link href="/register/" className="col btn-brown">Register</Link>
+        <Link href="/login/" className="col btn-yellow">Login</Link>
+      </Row>
+      <Row tag="p">
+        <Link href="http://facebook.com" className="col facebook-btn" external><Icon ios="f7:facebook" aurora="f7:facebook" md="material:facebook" size="20px"></Icon>  Continue with Facebook</Link>
       </Row>
     </Block>
-
-    <BlockTitle>Panels</BlockTitle>
-    <Block strong>
-      <Row>
-        <Col width="50">
-          <Button fill raised panelOpen="left">Left Panel</Button>
-        </Col>
-        <Col width="50">
-          <Button fill raised panelOpen="right">Right Panel</Button>
-        </Col>
-      </Row>
-    </Block>
-
-    <List>
-      <ListItem
-        title="Dynamic (Component) Route"
-        link="/dynamic-route/blog/45/post/125/?foo=bar#about"
-      />
-      <ListItem
-        title="Default Route (404)"
-        link="/load-something-that-doesnt-exist/"
-      />
-      <ListItem
-        title="Request Data & Load"
-        link="/request-and-load/user/123456/"
-      />
-    </List>
+   
   </Page>
 );

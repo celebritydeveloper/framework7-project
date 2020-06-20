@@ -17,6 +17,40 @@
   color: yellow;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.btn-brown {
+  background: brown;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+
+.btn-yellow {
+  background: #ffcc00;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+
+.facebook-btn {
+  background: #fff;
+  border-radius: 10px;
+  color: rgb(42, 42, 141);
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+
 .login--nav {
   color: #ffcc00;
 }
@@ -62,7 +96,6 @@
   border: none
 }
 
-
 .login--nav .back {
   color: #ffcc00;
   padding-left: 2px;
@@ -70,6 +103,7 @@
 
 .login--forgot {
   color: #ffcc00;
+  font-weight: bold;
   text-align: right;
 }
 

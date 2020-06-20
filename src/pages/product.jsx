@@ -21,7 +21,7 @@ export default class extends React.Component {
     return (
       <Page name="product">
         <Navbar title={this.state.product.title} backLink="Back" />
-        <BlockTitle>About {this.state.product.title}</BlockTitle>
+        <BlockTitle>{this.state.product.title}</BlockTitle>
         <Block strong>
           {this.state.product.description}
         </Block>
