@@ -5,7 +5,7 @@
 
 /* Custom color theme properties */
 :root {
-  --f7-theme-color: #942a2a;
+  --f7-theme-color: #ffcc00;
   --f7-theme-color-rgb: 247, 247, 247;
   --f7-theme-color-shade: #ffffff;
   --f7-theme-color-tint: #b34545;
@@ -13,25 +13,58 @@
 
 /* Your app custom styles here */
 
+.toolbar .tabLinkActive {
+  color: yellow;
+}
+
 .login--nav {
-  color: #a52a2a;
+  color: #ffcc00;
 }
 
 .login--nav .back {
-  color: rgb(44, 44, 44);
+  color: #ffcc00;
   padding-left: 2px;
 }
 
-.login--btn {
-  background: #a52a2a;
-  color: #fff;
-}
-
 .login--forgot {
-  color: hsl(0, 51%, 46%);
+  color: #ffcc00;
   text-align: right;
 }
 
-.meal--list {
-  display: none;
+.meal--title {
+  color: #ffcc00;
+}
+
+.meal__list ul{
+  background: none;
+  margin-top: -20px;
+}
+
+.meal--list-item {
+  background: #fff;
+  border-bottom: none;
+  margin-bottom: 10px;
+}
+
+.meal--list-item .item-header {
+  margin-bottom: 10px;
+}
+
+.meal--list-item .item-footer {
+  margin-top: 15px;
+}
+
+
+.meal--list-item .item-inner:after {
+  background: none;
+}
+
+.meal--list-item .badge {
+  border-radius: 4px;
+  position: relative;
+  top: -25px;
+}
+
+.meal--back-icon {
+  color: yellow;
 }

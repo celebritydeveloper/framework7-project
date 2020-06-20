@@ -109,11 +109,11 @@ export default class extends React.Component {
         {/* Views/Tabs container */}
         <Views tabs className="safe-areas">
           {/* Tabbar for switching views-tabs */}
-          <Toolbar tabbar labels bottom>
+          <Toolbar tabbar labels bottom className="toolbar">
             <Link tabLink="#view-home" tabLinkActive iconIos="f7:house" iconAurora="f7:house" iconMd="material:home" text="Home" />
-            <Link tabLink="#view-catalog" iconIos="f7:gift_fill" iconAurora="f7:gift_fill" iconMd="material:burger" text="Meals" />
-            <Link tabLink="#view-settings" iconIos="f7:map_pin_ellipse" iconAurora="f7:map_pin_ellipse" iconMd="material:map" text="Location" />
-            <Link tabLink="#view-settings" iconIos="f7:gearalt_fill" iconAurora="f7:gear_alt_fill" iconMd="material:settings" text="Settings" />
+            <Link tabLink="#view-catalog" iconIos="f7:gift_fill" iconAurora="f7:gift_fill" iconMd="material:room_service" text="Meals" />
+            <Link tabLink="#view-settings" iconIos="f7:map_pin_ellipse" iconAurora="f7:map_pin_ellipse" iconMd="material:place" text="Location" />
+            <Link tabLink="#view-settings" iconIos="f7:gear_alt_fill" iconAurora="f7:gear_alt_fill" iconMd="material:settings" text="Settings" />
           </Toolbar>
 
           {/* Your main view/tab, should have "view-main" class. It also has "tabActive" prop */}
