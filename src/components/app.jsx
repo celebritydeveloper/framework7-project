@@ -146,23 +146,20 @@ export default class extends React.Component {
             <Link tabLink="#view-settings" iconIos="f7:gear_alt_fill" iconAurora="f7:gear_alt_fill" iconMd="material:settings" text="Settings" />
           </Toolbar>
 
-          {/* Your main view/tab, should have "view-main" class. It also has "tabActive" prop */}
+          {/* Main view/tab */}
           <View id="view-home" main tab tabActive url="/" />
 
-          {/* Catalog View */}
-          <View id="view-meals" name="catalog" tab url="/meals/" />
+          {/* Meals View */}
+          <View id="view-meals" name="meals" tab url="/meals/" />
 
-          {/* Settings View */}
-          <View id="view-about" name="settings" tab url="/about/" />
+          {/* About View */}
+          <View id="view-about" name="location" tab url="/about/" />
 
           {/* Settings View */}
           <View id="view-settings" name="settings" tab url="/settings/" />
 
         </Views>
 
-     
-
-        
       </App>
     )
   }
