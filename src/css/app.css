@@ -12,13 +12,12 @@
 }
 
 /* Your app custom styles here */
-
 .login--nav {
   color: #a52a2a;
 }
 
 .login--nav .back {
-  color: rgb(44, 44, 44);
+  color: #2c2c2c;
   padding-left: 2px;
 }
 
@@ -28,10 +27,11 @@
 }
 
 .login--forgot {
-  color: hsl(0, 51%, 46%);
+  color: #b13939;
   text-align: right;
 }
 
 .meal--list {
   display: none;
 }
+/*# sourceMappingURL=app.css.map */

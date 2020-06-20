@@ -14,8 +14,8 @@ import {
 } from 'framework7-react';
 
 export default () => (
-  <Page name="form">
-    <Navbar title="Login" backLink="Back"></Navbar>
+  <Page name="form login">
+    <Navbar className="login--nav" title="Login" backLink="Back" backLinkShowText></Navbar>
 
     <List >
       <ListInput
@@ -32,12 +32,12 @@ export default () => (
     </List>
 
     <Block>
-      <p href="" className="right">Forgot Password?</p>
+      <p className="login--forgot">Forgot Password?</p>
     </Block>
 
     <Block>
       <Row tag="p">
-        <Button className="col" color="red" round fill>Login</Button>
+        <Button className="col login--btn" round fill>Login</Button>
       </Row>
     </Block>
 
